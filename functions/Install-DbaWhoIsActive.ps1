@@ -98,7 +98,7 @@ function Install-DbaWhoIsActive {
 				try {
 					Write-Message -Level Verbose -Message "Downloading sp_WhoisActive zip file, unzipping and installing."
 					
-					$url = 'http://whoisactive.com/who_is_active_v11_17.zip'
+					$url = 'http://whoisactive.com/downloads/who_is_active_v11_17.zip'
 					$temp = ([System.IO.Path]::GetTempPath()).TrimEnd("\")
 					$zipfile = "$temp\spwhoisactive.zip"
 					
